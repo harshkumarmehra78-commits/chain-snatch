@@ -96,8 +96,7 @@ demo = gr.Interface(
 
 if __name__ == "__main__":
     demo.launch(
-        server_name="0.0.0.0",  # Listen on all network interfaces
-        server_port=int(os.getenv("PORT", 7860)),  # Use PORT env variable
-        share=False  # Disable share for deployed apps
-    )
+    server_name="0.0.0.0",
+    server_port=7860
+)
 
