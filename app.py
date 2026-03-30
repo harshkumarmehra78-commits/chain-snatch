@@ -95,10 +95,9 @@ demo = gr.Interface(
 
 
 if __name__ == "__main__":
-    # Preload model at startup so deployment fails fast if model is missing/corrupt.
-    get_model()
-
     demo.launch(
-        share=True,
+        server_name="0.0.0.0",  # Listen on all network interfaces
+        server_port=int(os.getenv("PORT", 7860)),  # Use PORT env variable
+        share=False  # Disable share for deployed apps
     )
 
