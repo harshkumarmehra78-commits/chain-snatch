@@ -4,7 +4,7 @@ opencv-python-headless
 tensorflow
 scikit-learn
 Pillow
-huggingface_hub==
+huggingface_hub
 fastapi
 pydantic
 typing_extensions
